@@ -1,3 +1,6 @@
+" Disable intro message
+set shortmess+=I
+
 set number
 set relativenumber
 set mouse=
