@@ -13,9 +13,9 @@ nnoremap <silent> fj :nohlsearch<CR>
 noremap! <C-BS> <C-w>
 noremap! <C-h> <C-w>
 
-nnoremap <silent> <TAB> :bn<CR>
-nnoremap <silent> <S-TAB> :bp<CR>
-nnoremap <silent> qq :bdel %<CR>
+nnoremap <silent> <TAB> :bn!<CR>
+nnoremap <silent> <S-TAB> :bp!<CR>
+nnoremap <silent> <F1> :bdel %<CR>
 
 " colorscheme codedark
 
