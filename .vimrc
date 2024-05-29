@@ -1,15 +1,13 @@
-" Disable intro message
+"disable intro message
 set shortmess+=I
 
-set number
+set nonumber
 set relativenumber
 set mouse=
 
 set termguicolors
 
 "Mappings
-inoremap fj <Esc>
-vnoremap fj <Esc>
 nnoremap <silent> fj :nohlsearch<CR>
 
 " I gotta understand this, btw
@@ -19,8 +17,6 @@ noremap! <C-h> <C-w>
 nnoremap <silent> <TAB> :bn!<CR>
 nnoremap <silent> <S-TAB> :bp!<CR>
 nnoremap <silent> <F1> :bdel %<CR>
-
-" colorscheme codedark
 
 " Changing cursor in insert mode
 let &t_SI = "\e[6 q"
@@ -38,3 +34,14 @@ syntax enable
 filetype plugin indent on
 
 set clipboard^=unnamed,unnamedplus
+
+" Pluggins
+
+call plug#begin()
+
+Plug 'yuezk/vim-js'
+Plug 'maxmellon/vim-jsx-pretty'
+Plug 'momota/cisco.vim'
+Plug 'flazz/vim-colorschemes'
+
+call plug#end()
