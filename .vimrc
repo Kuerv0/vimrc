@@ -10,10 +10,6 @@ set termguicolors
 "Mappings
 nnoremap <silent> fj :nohlsearch<CR>
 
-" I gotta understand this, btw
-noremap! <C-BS> <C-w>
-noremap! <C-h> <C-w>
-
 nnoremap <silent> <TAB> :bn!<CR>
 nnoremap <silent> <S-TAB> :bp!<CR>
 nnoremap <silent> <F1> :bdel %<CR>
