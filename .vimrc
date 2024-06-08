@@ -1,14 +1,15 @@
 "disable intro message
 set shortmess+=I
 
-set nonumber
 set relativenumber
 set mouse=
 
 set termguicolors
 
+set nostartofline
+
 "Mappings
-nnoremap <silent> fj :nohlsearch<CR>
+nnoremap <silent> <ESC> :nohlsearch<CR>
 
 nnoremap <silent> <TAB> :bn!<CR>
 nnoremap <silent> <S-TAB> :bp!<CR>
@@ -19,7 +20,7 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
 set textwidth=80
-set colorcolumn=+1
+" set colorcolumn=+1
 
 "I gotta check this!
 set tabstop=2 softtabstop=2 shiftwidth=2
